@@ -4,8 +4,18 @@ setwd("C:/Users/gricardo/OneDrive - Australian Institute of Marine Science/R/201
 #data1 = read.table("https://pastebin.com/raw/zfrUha88", header= TRUE,dec=",")
 #data1 = read.table("https://pastebin.com/raw/BaCAP3Sr", header= TRUE,dec=",")
 #data1 = read.table("https://pastebin.com/raw/dKVi6L3t", header= TRUE,dec=",")  #paul
-data1 = read.table("https://pastebin.com/raw/dUMSAvYi", header= TRUE,dec=",")  #bent4
-#data1 = read.table("XXXX", header= TRUE,dec=",")  #bent4
+#data1 = read.table("https://pastebin.com/raw/dUMSAvYi", header= TRUE,dec=",")  #bent4
+#data1 = read.table("XXXX", header= TRUE,dec=",") 
+#data1 = read.table("https://pastebin.com/raw/BaCAP3Sr", header= TRUE,dec=",") #orp4
+data1 = read.table("https://pastebin.com/raw/CgYVQp6f", header= TRUE,dec=",") #flo1
+# data1 = read.table("https://pastebin.com/raw/2jsiuqP2", header= TRUE,dec=",") #flo2
+# data1 = read.table("https://pastebin.com/raw/my6xYhfG", header= TRUE,dec=",") #flo3
+# data1 = read.table("https://pastebin.com/raw/atPPnT8v", header= TRUE,dec=",") #flo4
+# data1 = read.table("https://pastebin.com/raw/C7U2JcSS", header= TRUE,dec=",") #flo5
+# data1 = read.table("https://pastebin.com/raw/Fp0uLBNX", header= TRUE,dec=",") #flo6
+# 
+# 
+
 
 data1
 
@@ -321,7 +331,7 @@ out <- fit.jagsNEC(data=data1,
 
 check.chains(out)
 
-plot(out)
+plot_jagsNEC(out)
 out$NEC
 out$beta
 extract_ECx(out, ECx.val = 10)
